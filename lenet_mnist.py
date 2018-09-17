@@ -4,6 +4,8 @@ from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn import datasets
+import matplotlib
+matplotlib.use('agg')
 import matplotlib.pyplot as plt
 from keras import backend as K
 import numpy as np
