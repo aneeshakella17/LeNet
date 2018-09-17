@@ -53,4 +53,3 @@ predictions = model.predict(testX, batch_size=128)
 print(classification_report(testY.argmax(axis=1),
 	predictions.argmax(axis=1),
 	target_names=[str(x) for x in le.classes_]))
-model.save("my_file.hdf5")
