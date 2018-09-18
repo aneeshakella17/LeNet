@@ -37,7 +37,7 @@ print("[INFO] accessing MNIST...")
 #
 # # initialize the optimizer and model
 # print("[INFO] compiling model...")
-# opt = SGD(lr=0.01)
+opt = SGD(lr=0.01)
 model = LeNet.build(width=28, height=28, depth=1, classes=10)
 model.compile(loss="categorical_crossentropy", optimizer=opt,
 	metrics=["accuracy"])
