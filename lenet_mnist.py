@@ -53,4 +53,4 @@ model.compile(loss="categorical_crossentropy", optimizer=opt,
 # # print(classification_report(testY.argmax(axis=1),
 # # 	predictions.argmax(axis=1),
 # 	target_names=[str(x) for x in le.classes_]))
-model.save("test.hdf5")
+model.save("/artifacts/test.hdf5")
