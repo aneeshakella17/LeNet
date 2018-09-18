@@ -9,6 +9,7 @@ matplotlib.use('agg')
 import matplotlib.pyplot as plt
 from keras import backend as K
 import numpy as np
+import pickle
 
 print("[INFO] accessing MNIST...")
 # dataset = datasets.fetch_mldata("MNIST Original")
@@ -53,4 +54,3 @@ model.compile(loss="categorical_crossentropy", optimizer=opt,
 # # print(classification_report(testY.argmax(axis=1),
 # # 	predictions.argmax(axis=1),
 # 	target_names=[str(x) for x in le.classes_]))
-model.save("/artifacts/test.hdf5")
