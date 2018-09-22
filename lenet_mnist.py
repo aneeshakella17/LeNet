@@ -9,7 +9,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn import datasets
 from keras import backend as K
-import matplotlib.pyplot as plt
+import matplotlib 
+matplotlib.use("Agg");
+from matplotlib import pyplot as plt
 import numpy as np
 
 # grab the MNIST dataset (if this is your first time using this
